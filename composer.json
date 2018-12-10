@@ -2,7 +2,7 @@
     "name": "xydens/laravel-rsq",
     "description": "Laravel Remote Structured Queries",
     "type": "library",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "authors": [
         {
             "name": "Maxim Kutepov",
@@ -13,9 +13,6 @@
         "laravel/framework": "^5.4"
     },
     "autoload": {
-        "classmap": [
-            "database"
-        ],
         "psr-4": {
             "Xydens\\LaravelRSQ\\": "src/"
         }
