@@ -1,0 +1,15 @@
+{
+    "name": "xyden/laravel-rsq",
+    "description": "Laravel Remote Structured Queries",
+    "type": "library",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Maxim Kutepov",
+            "email": "xydenswork@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.4"
+    }
+}
