@@ -1,6 +1,6 @@
-#Laravel Remote Structured Queries
+# Laravel Remote Structured Queries
 As SQL but JSON and safe(probably)
-##Concept
+## Concept
 Specify models selection and representation through special `query` field. Query is special json
  structure like: 
  ```
@@ -17,12 +17,12 @@ Specify models selection and representation through special `query` field. Query
     }
 }
 ``` 
-##Setup
+## Setup
 1. Add `Xydens\LaravelRSQ\RSQServiceProvider::class` to `providers`
 2. Optionally add `"RSQ" => Xydens\LaravelRSQ\Factory::class` to `aliases`
 3. Add `Xydens\LaravelRSQ\RemoteQueryable` trait to models, what you want to query
-##Usage
-###Simple example
+## Usage
+### Simple example
 In your controller:
 ```
 use App/User; //Model
