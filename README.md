@@ -5,7 +5,7 @@ Specify models selection and representation through special `query` field. Query
  structure like: 
  ```
 {
-    "fileter": {
+    "filter": {
         "is_confirmed": 1,
         "age": {
             "sign": ">=",

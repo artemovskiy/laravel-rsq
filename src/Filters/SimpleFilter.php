@@ -17,6 +17,8 @@ class SimpleFilter extends Filter {
 
     const SING_LIKE = 'like';
 
+    const SING_IN = 'in';
+
     protected $sign = self::SING_EQUIVALENT;
 
     protected $value;
@@ -28,6 +30,9 @@ class SimpleFilter extends Filter {
                 break;
             case self::SING_LIKE:
                 return $query->where($this->column,'LIKE','%'.$this->value.'%');
+                break;
+            case self::SING_IN:
+                return $query->whereIn($this->column,$this->value);
                 break;
             default:
                 return $query->where($this->column,$this->sign,$this->value);
